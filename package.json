@@ -1,0 +1,23 @@
+{
+  "name": "cachingproxy",
+  "version": "1.0.0",
+  "bin":{
+    "caching-proxy": "./src/caching-proxy.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "commander": "^12.1.0",
+    "express": "^4.19.2",
+    "node-cache": "^5.1.2",
+    "response-time": "^2.3.2"
+  }
+}
