@@ -92,6 +92,36 @@ caching-proxy --port 3000 --origin http://dummyjson.com
 - Archivo de prueba para realizar solicitudes HTTP manuales (opcional).
 - Útil para probar rápidamente los endpoints durante el desarrollo.
 
+## Fotos de Pruebas
+
+Aquí se presentan algunas capturas de pantalla y ejemplos de uso del proyecto.
+
+### Prueba 1: Solicitud a `/products` con Cache MISS
+![alt text](image.png)
+
+*En esta imagen se muestra una solicitud al endpoint `/products` con una respuesta cacheada como MISS, indicando que los datos se obtuvieron de la URL de origen y no estaban en cache. El tiempo de respuesta fue de `1369 ms`.*
+
+
+### Prueba 2: Solicitud a `/products` con Cache HIT
+![alt text](image-1.png)
+*En esta imagen se muestra una solicitud al endpoint `/products` con una respuesta cacheada como HIT, lo que significa que los datos se obtuvieron directamente del cache, mejorando el tiempo de respuesta a `1.8 ms`, logrando un aumento de velocidad del `99.8%`.*
+
+
+## Cálculo del Aumento de Velocidad
+
+
+El aumento de velocidad al usar el cache se calcula con la siguiente fórmula:
+
+- Mejora (%) = (1 - (Tiempo con HIT / Tiempo con MISS)) * 100
+
+- Mejora (%) = (1 - (1.8 / 1369)) * 100
+
+- Mejora (%) ≈ 99.87%
+
+Esto demuestra que utilizar cache puede mejorar drásticamente los tiempos de respuesta, reduciendo el tiempo de espera de los usuarios y mejorando la eficiencia de las solicitudes.
+
+
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
