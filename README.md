@@ -1,8 +1,6 @@
 # Caching Proxy
 
-https://roadmap.sh/projects/caching-server
-
-Este es un simple proxy HTTP con caching implementado en Node.js usando Express. Permite realizar solicitudes a una URL de origen, cachear las respuestas y servirlas con un encabezado HTTP que indica si la respuesta proviene del cache.
+Este es un proxy HTTP con caching implementado en Node.js usando Express. Permite realizar solicitudes a una URL de origen, cachear las respuestas y servirlas con un encabezado HTTP que indica si la respuesta proviene del cache.
 
 ## Estructura del Proyecto
 
